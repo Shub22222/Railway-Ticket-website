@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>train tickit booking </title>
+<style>
+   *{margin: 0;
+   padding: 0;}
+  body{background-color:yellow;
+background-image: linear-gradient( to top ,lightpink, yellow);
+}
+div.main{ width:409px;
+margin:50px auto 0px auto;
+
+
+}
+h2
+{text-align: center;
+padding:90px;
+font-family: sans-serif;
+       padding-up:60px;
+        padding-left: 60px;
+       padding-right: 20px;
+        padding-bottom: 90px;
+
+}
+div.register
+{background-color:rgba(0,0,0,0.2);
+width:100%
+font-size:18px;
+border-radius:32px;
+border:90px soid rgba(255,255,255,0.3); 
+         margin-up:60px;
+         margin-left: 30px;
+         margin-right: 30px;
+         margin-bottom: 60px;
+
+}
+form#register{margin:60px;
+}
+label{ font-family: sans-serif;
+font-size:18px;
+font-style:italic;
+
+     
+}
+
+input#name{width:250px;
+border:5px solid #dddd;
+border-radius:30px;
+outline:0px;
+padding:8px;
+background-color:lightgreen;
+box-shadow:inset 1px 1px 5px 0,0;
+}
+input#number{border-radius:30px;
+background-color:lightgreen;
+padding:8px
+}
+input#passengers{border-radius:90px;
+background-color:lightgreen;
+padding:8px
+}
+input#train{
+border-radius:999px;
+border:5px solid #dddd;
+background-color:lightred;
+}
+
+input#submit{
+width:200px;
+padding:6px;
+font-size:16px;
+font-weight:600px;
+font-family:sans-serif;
+background-color:rgba(250,100,0,0.8);
+color:#fff;
+cursor:pointer;
+border:1px solid rgba(255,255,255,0.3);
+border-shadow:1px 1px 5px rgba(0,0,0,0.3);
+border-radius:10px;
+ }
+
+input#reset{
+width:200px;
+padding:6px;
+font-size:16px;
+font-weight:600px;
+font-family:sans-serif;
+background-color:rgba(250,100,0,0.8);
+color:#fff;
+cursor:pointer;
+border:1px solid rgba(255,255,255,0.3);
+border-shadow:1px 1px 5px rgba(0,0,0,0.3);
+border-radius:10px;
+margin-bottom:40px;
+ }
+lable,span,h2{
+text-shadow:1px 1px 5px rgba (0,0,0,0.3);
+}
+
+
+</style>
+</head> 
+
+<body>
+<div class="container">
+<div class="tickrer">
+<div class="title "><h4>disclaimer<h4><div>
+<div class="news ">
+<marquee>
+<p>please use mask in this pandamic 
+,sanize your hand ,keep social 
+distance if you any symptoms isolate 
+your self.
+</p>
+</marquee>
+</div>
+</div>
+</div>
+
+<div class="main">
+<div class="register">
+<h2> INDIAN RAILWAY RESERVATION HERE:-</h2>
+<form id="register"method="post">
+<label>First name:</label>
+<br>
+<input type="text"name="fname"id="name"placeholder="enter your name">
+<br><br>
+<label>last name:</label>
+<br>
+<input type="text"name="lname"id="name"placeholder="enter your last name">
+<br><br>
+<label>aadhar no:</label>
+<br>
+<input type="number"name="number"id="number"placeholder="enter your adhar no">
+<br><br>
+<label> your arrival station:</label>
+<br>
+<input type="text"name="lname"id="name"placeholder="enter arrival station">
+<br><br>
+<label>your destinatin station :</label>
+<br>
+<input type="text"name="lname"id="name"placeholder="enter your destination station">
+<br><br>
+<label>date for reservation:</label>
+<br>
+<input type="date"name="date"id="name">
+<br><br>
+<label>time:</label>
+<br>
+<input type="time"name="time"id="name">
+<br><br>
+<label>total no of passengers:</label>
+<br>
+<input type="number"name="passengers"id="passengers"placeholder= "total pasangers">
+<br><br>
+<label>select cochs:</label>
+<br>
+<label>1st class:</label>
+<input type="radio"name="f lass"id="f class">
+<label>2nd class:</label>
+<input type="radio"name="s lass"id="s class">
+<label>General class:</label>
+<input type="radio"name="s lass"id="s class"><br><br>
+<label>write your feedback:</label>
+<input type="myText" cols="30" row="30"><br><br>
+<label for ="avilable train">avilables trains today🚆:-</label>
+<input type=" text"list="train">
+<datalist id="train">
+<option value="express train wap56677">  panvel express wap73058 at 8:00pm</option>
+<option value="express train wap73058  ">pune express wap73758 at 8:12pm    </option>
+<option value="express train wap73058 ">thane express. wap79858 at 8:23pm    </option>
+<option value="express train wap73058 ">ahmdabad express.wap73758 at 8:25pm   </option>
+<option value="express trainwap73058 "> raigad express.  wap73268 at 8:30pm  </option>
+<option value="express trainwap73058 "> nashik express.   wap79358 at 8:32pm    </option>
+<option value="express trainwap73058  ">nandoorbar express.   wap76458 at 8:35pm   </option>
+<option value="express trainwap73058  ">nagpur express.  wap78858 at 8:40pm     train </option>
+<option value="express trainwap73058  "> jalgaoun express.  wap74458 at 8:42pm    </option>
+<option value="express trainwap73058   ">ahmdnager express wap72258 at 8:47pm     </option>
+<option value="express trainwap73058  ">vashim express  wap73058 at 9:00pm     </option>
+<option value="express trainwap73058   ">buldhana express.  wap73058 at 9:01pm    </option>
+<option value="express trainwap73058  ">amravati express. wap73058 at 9:08pm     </option>
+<option value="express trainwap73058   "> usmanabad express  wap73058 at 9:10pm    </option>
+<option value="express trainwap73058  ">nanded express.  wap73058 at 9:11pm     </option>
+<option value="express trainwap73058  ">benglor express.  wap73058 at 9:30pm    </option>
+<option value="express trainwap73058   "> manglore express  wap73058 at 10:00pm   </option>
+<option value="express trainwap73058  ">chennaiexpress  wap73058 at 10:01pm    </option>
+<option value="express trainwap73058  ">kerla express. wap73058 at 10:10pm     </option>
+<option value="express trainwap73058 ">deccan express.  wap73058 at 10:20pm       </option>
+<option value="express trainwap73058   "> gadchiroli express  wap73058 at 10:30pm    </option>
+<option value="express trainwap73058  ">bandara express.  wap73058 at 10:40pm     </option>
+<option value="express trainwap73058  ">gondhiya express.  wap73058 at 10:41pm    </option>
+<option value="express trainwap73058   "> kasmir express  wap73058 at 10:50pm   </option>
+<option value="express trainwap73058  "> tamilnadu express  wap73058 at 10:56pm    </option>
+<option value="express trainwap73058  ">kochhi express. wap73058 at 10:59pm     </option>
+<option value="express train wap73058  ">pune express wap73058 at 11:00pm    </option>
+<option value="express train wap73058 ">thane express. wap73058 at 11:10pm    </option>
+<option value="express train wap73058 ">ahmdabad express.wap73058 at 11:20pm   </option>
+<option value="express trainwap73058 "> raigad express.  wap73058 at 8:00pm  </option>
+<option value="express trainwap73058 "> nashik express.   wap73058 at 8:00pm    </option>
+<option value="express trainwap73058  ">nandoorbar express.   wap73058 at 8:00pm   </option>
+<option value="express trainwap73058  ">nagpur express.  wap73058 at 8:00pm     train </option>
+<option value="express trainwap73058  "> jalgaoun express.  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058   ">ahmdnager express wap73058 at 8:00pm     </option>
+<option value="express trainwap73058  ">vashim express  wap73058 at 8:00pm     </option>
+<option value="express trainwap73058   ">buldhana express.  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058  ">amravati express. wap73058 at 8:00pm     </option>
+<option value="express trainwap73058   "> usmanabad express  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058  ">nanded express.  wap73058 at 8:00pm     </option>
+<option value="express trainwap73058  ">benglor express.  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058   "> manglore express  wap73058 at 8:00pm   </option>
+<option value="express trainwap73058  ">chennaiexpress  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058  ">kerla express. wap73058 at 8:00pm     </option>
+<option value="express trainwap73058 ">deccan express.  wap73058 at 8:00pm       </option>
+<option value="express trainwap73058   "> gadchiroli express  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058  ">bandara express.  wap73058 at 8:00pm     </option>
+<option value="express trainwap73058  ">gondhiya express.  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058   "> kasmir express  wap73058 at 8:00pm   </option>
+<option value="express trainwap73058  "> tamilnadu express  wap73058 at 8:00pm    </option>
+<option value="express train wap73058  ">pune express wap73058 at 8:00pm    </option>
+<option value="express train wap73058 ">thane express. wap73058 at 8:00pm    </option>
+<option value="express train wap73058 ">ahmdabad express.wap73058 at 8:00pm   </option>
+<option value="express trainwap73058 "> raigad express.  wap73058 at 8:00pm  </option>
+<option value="express trainwap73058 "> nashik express.   wap73058 at 8:00pm    </option>
+<option value="express trainwap73058  ">nandoorbar express.   wap73058 at 8:00pm   </option>
+<option value="express trainwap73058  ">nagpur express.  wap73058 at 8:00pm     train </option>
+<option value="express trainwap73058  "> jalgaoun express.  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058   ">ahmdnager express wap73058 at 8:00pm     </option>
+<option value="express trainwap73058  ">vashim express  wap73058 at 8:00pm     </option>
+<option value="express trainwap73058   ">buldhana express.  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058  ">amravati express. wap73058 at 8:00pm     </option>
+<option value="express trainwap73058   "> usmanabad express  wap73058 at 8:00am    </option>
+<option value="express trainwap73058  ">nanded express.  wap73058 at 8:00pm     </option>
+<option value="express trainwap73058  ">benglor express.  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058   "> manglore express  wap73058 at 8:00pm   </option>
+<option value="express trainwap73058  ">chennaiexpress  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058  ">kerla express. wap73058 at 8:00pm     </option>
+<option value="express trainwap73058 ">deccan express.  wap73058 at 8:00am       </option>
+<option value="express trainwap73058   "> gadchiroli express  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058  ">bandara express.  wap73058 at 8:00pm     </option>
+<option value="express trainwap73058  ">gondhiya express.  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058   "> kasmir express  wap73058 at 8:00pm   </option>
+<option value="express trainwap73058  "> tamilnadu express  wap73058 at 8:00pm    </option>
+<option value="express train wap73058  ">pune express wap73058 at 8:00pm    </option>
+<option value="express train wap73058 ">thane express. wap73058 at 8:00pm    </option>
+<option value="express train wap73058 ">ahmdabad express.wap73058 at 8:00pm   </option>
+<option value="express trainwap73058 "> raigad express.  wap73058 at 8:00pm  </option>
+<option value="express trainwap73058 "> nashik express.   wap73058 at 8:00pm    </option>
+<option value="express trainwap73058  ">nandoorbar express.   wap73058 at 8:00pm   </option>
+<option value="express trainwap73058  ">nagpur express.  wap73058 at 8:00pm     train </option>
+<option value="express trainwap73058  "> jalgaoun express.  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058   ">ahmdnager express wap73058 at 8:00pm     </option>
+<option value="express trainwap73058  ">vashim express  wap73058 at 8:00pm     </option>
+<option value="express trainwap73058   ">buldhana express.  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058  ">amravati express. wap73058 at 8:00pm     </option>
+<option value="express trainwap73058   "> usmanabad express  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058  ">nanded express.  wap73058 at 8:00pm     </option>
+<option value="express trainwap73058  ">benglor express.  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058   "> manglore express  wap73058 at 8:00pm   </option>
+<option value="express trainwap73058  ">chennaiexpress  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058  ">kerla express. wap73058 at 8:00am     </option>
+<option value="express trainwap73058 ">deccan express.  wap73058 at 8:00pm       </option>
+<option value="express trainwap73058   "> gadchiroli express  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058  ">bandara express.  wap73058 at 8:00pm     </option>
+<option value="express trainwap73058  ">gondhiya express.  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058   "> kasmir express  wap73058 at 8:00pm   </option>
+<option value="express trainwap73058  "> tamilnadu express  wap73058 at 8:00pm    </option>
+<option value="express train wap73058  ">pune express wap73058 at 8:00pm    </option>
+<option value="express train wap73058 ">thane express. wap73058 at 8:00pm    </option>
+<option value="express train wap73058 ">ahmdabad express.wap73058 at 8:00pm   </option>
+<option value="express trainwap73058 "> raigad express.  wap73058 at 8:00am  </option>
+<option value="express trainwap73058 "> nashik express.   wap73058 at 8:00pm    </option>
+<option value="express trainwap73058  ">nandoorbar express.   wap73058 at 8:00pm   </option>
+<option value="express trainwap73058  ">nagpur express.  wap73058 at 8:00pm     train </option>
+<option value="express trainwap73058  "> jalgaoun express.  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058   ">ahmdnager express wap73058 at 8:00pm     </option>
+<option value="express trainwap73058  ">vashim express  wap73058 at 8:00pm     </option>
+<option value="express trainwap73058   ">buldhana express.  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058  ">amravati express. wap73058 at 8:00pm     </option>
+<option value="express trainwap73058   "> usmanabad express  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058  ">nanded express.  wap73058 at 8:00pm     </option>
+<option value="express trainwap73058  ">benglor express.  wap73058 at 8:00pm    </option>
+<option value="express trainwap73058   "> manglore express  wap73058 at 8:00pm   </option>
+<option value="express trainwap73058  ">chennaiexpress  wap73058 at 9:00pm    </option>
+<option value="express trainwap73058  ">kerla express. wap73058 at 7:00pm     </option>
+<option value="express trainwap73058 ">deccan express.  wap73058 at 6:00pm       </option>
+<option value="express trainwap73058   "> gadchiroli express  wap73058 at 3:00pm    </option>
+<option value="express trainwap73058  ">bandara express.  wap73058 at 2:00pm     </option>
+<option value="express trainwap73058  ">gondhiya express.  wap73058 at 11:00pm    </option>
+<option value="express trainwap73058   "> kasmir express  wap73058 at 5:00pm   </option>
+<option value="express trainwap73058  "> tamilnadu express  wap73058 at 9:00am    </option>
+</datalist>
+<p>RAILWAY HELPLINE NO:-118</p>
+<label>search tickit price/km</label>
+<input type="text"list="price" >
+ <datalist id="price">
+<option value="0-10km =40$"> 0-10km =40$  </option>
+<option value="0-20km =70$"> 0-20km =70$  </option>
+<option value="0-30km =90$"> 0-30km =90$  </option>
+<option value="0-40km =100$"> 0-40km =100$  </option>
+<option value="0-50km =240$">0-50km =240$    </option>
+<option value="0-60km =290$"> 0-60km =290$ </option>
+<option value="0-70km =300$"> 0-70km =300$ </option>
+<option value="0-80km =346$">0-80km =346$ </option>
+<option value="0-100km =400$">0-100km =400$</option>
+<option value="0-1500km =450$">0-1500km =450$   </option>
+<option value="0-2000km =470$"> 0-2000km =470$  </option>
+<option value="0-5000km =760$"> 0-5000km =760$ </option>
+<option value="0-9000km =900$">0-9000km =900$ </option>
+<option value="0-1200km =440$">  0-1200km =440$ </option>
+<option value="0-3500km =760$"> 0-3500km =760$  </option>
+<option value="0-8000km =890$">  0-8000km =890$  </option>
+      </datalist> <br><br>
+<input type="submit" id="submit"value="submit now">
+<br><br>
+<input type="reset"id="reset"value="reset now">
+</body>
+</html>
